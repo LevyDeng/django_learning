@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>主页</title>
+</head>
+<body>
+哈喽~
+<p></p>
+{{learn_text}}
+<p></p>
+{% for i in learn_list %}
+{{ i }}
+{% endfor %}
+<p></p>
+{% for i in learn_range %}
+{{i}}{% if not forloop.last %},{% endif%}
+{% endfor %}
+<p></p>
+{{request.META.REMOTE_ADDR}}
+</body>
+</html>
